@@ -24,4 +24,5 @@ If the script doesn't work, it's possible that the paths for the buttons have ch
 
 ## Notes
 
+If you refresh the page and your comments are back up, that means they are undeletable.
 This bookmarklet is not affiliated with or endorsed by Facebook. Use it at your own risk. The code is provided "as is" with no guarantees or warranties. Always double-check the button selectors before running the script, as changes to Facebook's layout or code may affect its functionality.
