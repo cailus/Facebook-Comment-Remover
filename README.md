@@ -7,30 +7,20 @@ This bookmarklet is designed to help you remove posts from your Facebook activit
 1. Go to Facebook and navigate to **Settings & Privacy**.
 2. Click on **Activity Log**.
 3. Select the **Comments** filter from the left sidebar.
-4. Open the browser console (right-click anywhere on the page, click **Inspect**, and then click on the **Console** tab).
-5. Copy the entire code from `bookmarklet.js` and paste it into the console.
-6. Press **Enter** to start the process.
+4. Locate the following buttons on the page: the "Select All" checkbox, the gray "Remove" button, and the blue "Remove" button.
+5. Right-click on the "Select All" checkbox, then click **Inspect** to open the browser's developer tools. The corresponding HTML element should be highlighted.
+6. Right-click on the highlighted element and choose **Copy** > **Copy selector (JS)**.
+7. Replace the `button1Selector` value in the `bookmarklet.js` code with the copied selector.
+8. Repeat steps 5-7 for both the gray and blue "Remove" buttons, updating the `button2Selector` and `button3Selector` values, respectively.
+9. Open the browser console (right-click anywhere on the page, click **Inspect**, and then click on the **Console** tab).
+10. Copy the entire modified code from `bookmarklet.js` and paste it into the console.
+11. Press **Enter** to start the process.
 
 The bookmarklet will automatically click on the necessary buttons to remove posts from your activity log. It will continue to do so indefinitely until you stop it or close the browser.
 
 ## Troubleshooting
 
-If the script doesn't work, it's possible that the paths for the buttons have changed. You'll need to update the button selectors in the `bookmarklet.js` file.
-
-To find the correct button selectors:
-
-1. Right-click on the button you want to update.
-2. Click on **Inspect** to open the browser's developer tools.
-3. In the **Elements** tab, the corresponding HTML element should be highlighted.
-4. Right-click on the highlighted element and choose **Copy** > **Copy selector** (JS).
-
-Replace the existing selectors in the `bookmarklet.js` file with the new ones you've copied. The selectors are defined as:
-
-- `button1Selector`
-- `button2Selector`
-- `button3Selector`
-
-Once you've updated the selectors, copy and paste the updated code into the console again and press **Enter** to restart the process.
+If the script doesn't work, it's possible that the paths for the buttons have changed. You'll need to update the button selectors in the `bookmarklet.js` file following the same steps mentioned in the "How to use" section.
 
 ## Notes
 
