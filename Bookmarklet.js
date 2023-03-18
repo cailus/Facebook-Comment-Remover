@@ -27,7 +27,7 @@ javascript:(function() {
             const button1Selector = 'the path here'; // Replace with the button1 selector
             const button2Selector = 'the path here'; // Replace with the button2 selector
             const button3Selector = 'the path here'; // Replace with the button3 selector
-            
+
             // "all" checkbox
             const button1 = document.querySelector(button1Selector);
             // "Remove" button
@@ -36,13 +36,13 @@ javascript:(function() {
             const button3 = document.querySelector(button3Selector);
 
             simulateClick(button1, button1Selector);
-            await sleep(1000 * randomMultiplier());
-
-            simulateClick(button2, button2Selector);
             await sleep(300 * randomMultiplier());
 
+            simulateClick(button2, button2Selector);
+            await sleep(1000 * randomMultiplier());
+
             simulateClick(button3, button3Selector);
-            await sleep(12000 * randomMultiplier());
+            await sleep(15000 * randomMultiplier());
         } catch (error) {
             console.error('Error performing actions:', error);
         }
